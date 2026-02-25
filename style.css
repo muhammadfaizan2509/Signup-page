@@ -1,0 +1,121 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Full page background */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #19062e 0%,
+  #14847E 20%,rgb(230, 35, 25) 50%,
+  rgb(8, 224, 55) 55%,rgb(157, 15, 129) ,
+   #cbd8ef 100%);
+}
+
+
+/* Container box */
+div {
+  background: rgba(4, 27, 67, 0.5);
+  padding: 2.5rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0px 8px 25px rgba(6, 2, 2,1);
+  width: 500px;
+  animation: fadeIn 2s ease;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: white;
+  font-size: 2rem;
+  text-decoration:underline;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: white;
+  font-size: 0.95rem;
+  font-weight:700;
+}
+
+/* Input fields */
+input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 1.2rem;
+  border: 1px solid #5a5959;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  transition: 0.3s ease;
+}
+
+input:focus {
+  border-color: #2575fc;
+  outline: none;
+  box-shadow: 0 0 50px rgba(37, 117, 252, 0.5);
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor:pointer;
+  transition: 0.3s;
+}
+
+button[type="submit"] {
+  background: red;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background: green;
+  
+}
+
+button[type="reset"] {
+  background: #f0f0f0;
+  color: black;
+ 
+}
+
+button[type="reset"]:hover {
+  background: red;
+  color: white;
+  
+}
+
+/* Buttons layout */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form button {
+  margin-top: 0.5rem;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-200px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
